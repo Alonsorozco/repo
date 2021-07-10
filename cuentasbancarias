@@ -1,0 +1,22 @@
+
+
+
+class Backccount
+    attr_accessor :balance
+    def initialize( bank ,account_numbre, balance = 0)
+    @bank = bank
+    @account_number = aacount_number
+    @balance = balance
+    end
+    def transferir(amount, occount)
+        self.balance = self.balance - amount
+        occount.balance = occount.balance + amount
+    end
+end
+
+acc_rodrigo  = Backccount.new ('Banco Estado','42834343',5000)
+acc_paul = Backccount.new ('Banco chile','5454543',5000)
+
+acc_rodrigo.transferir(5000,acc_paul)
+
+pp acc_rodrigo
